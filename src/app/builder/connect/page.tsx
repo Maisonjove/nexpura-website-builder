@@ -57,7 +57,7 @@ const PLATFORM_INSTRUCTIONS: Record<Platform, { label: string; steps: string[] }
 
 export default function ConnectPage() {
   const [enabledWidgets, setEnabledWidgets] = useState<Set<WidgetKey>>(
-    new Set(['chat', 'passport'])
+    new Set<WidgetKey>(['chat', 'passport'])
   )
   const [activePlatform, setActivePlatform] = useState<Platform>('shopify')
   const [copied, setCopied] = useState(false)
