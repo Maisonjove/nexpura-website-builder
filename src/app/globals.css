@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #1a2e1a;
+    --accent: #52B788;
+    --gold: #C9A84C;
+    --cream: #FAF7F2;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #2D2D2D;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
